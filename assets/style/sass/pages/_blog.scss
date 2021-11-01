@@ -10,6 +10,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    @include respo {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include respoXS {
+        grid-template-columns: 1fr;
+    }
     .articles{
         padding: 20px;
         .yellow_line{

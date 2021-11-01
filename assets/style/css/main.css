@@ -130,6 +130,11 @@ header .nav .items-nav a:hover {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 800px) {
+  .histoire .section1 {
+    flex-direction: column;
+  }
+}
 .histoire .section1 .texte {
   padding-top: 130px;
 }
@@ -142,6 +147,11 @@ header .nav .items-nav a:hover {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 800px) {
+  .histoire .section2 {
+    flex-direction: column;
+  }
+}
 .histoire .section2 .fond {
   background-image: url(../../images/histoire/image_histoire2.png);
 }
@@ -149,6 +159,11 @@ header .nav .items-nav a:hover {
   display: flex;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .histoire .section3 {
+    flex-direction: column;
+  }
 }
 .histoire .section3 .fond {
   background-image: url(../../images/histoire/image_histoire3.png);
@@ -158,6 +173,11 @@ header .nav .items-nav a:hover {
   width: 60%;
   background: var(--black);
   height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .histoire .texte {
+    width: 100%;
+  }
 }
 .histoire .texte .line {
   width: 100%;
@@ -172,6 +192,12 @@ header .nav .items-nav a:hover {
   background-position: center;
   overflow: hidden;
 }
+@media screen and (max-width: 800px) {
+  .histoire .fond {
+    width: 100%;
+    height: 800px;
+  }
+}
 
 .blog {
   padding: 0 10%;
@@ -182,6 +208,16 @@ header .nav .items-nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+}
+@media screen and (max-width: 800px) {
+  .blog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog {
+    grid-template-columns: 1fr;
+  }
 }
 .blog .articles {
   padding: 20px;
@@ -213,6 +249,11 @@ header .nav .items-nav a:hover {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 800px) {
+  .contact {
+    height: 130vh;
+  }
+}
 
 .yellow_line_contact {
   width: 25px;
@@ -223,6 +264,7 @@ header .nav .items-nav a:hover {
 .container_contact {
   display: flex;
   margin-top: 130px;
+  margin-bottom: 200px;
   justify-content: center;
   align-items: center;
 }
@@ -241,6 +283,11 @@ header .nav .items-nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 800px) {
+  .container_contact .form_contact form {
+    grid-template-columns: 1fr;
+  }
+}
 .container_contact .form_contact form input {
   padding-bottom: 4px;
   margin: 30px;
@@ -252,6 +299,11 @@ header .nav .items-nav a:hover {
 }
 .container_contact .form_contact form input:nth-child(5) {
   grid-column: 1/3;
+}
+@media screen and (max-width: 800px) {
+  .container_contact .form_contact form input:nth-child(5) {
+    grid-column: 1/2;
+  }
 }
 .container_contact .form_contact button {
   margin: 30px;
