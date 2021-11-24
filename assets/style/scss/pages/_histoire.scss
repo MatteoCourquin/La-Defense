@@ -1,0 +1,73 @@
+// **** HISTOIRE **** //
+// ================== //
+
+.histoire{
+    width: 100%;
+    height: 600px;
+    @include respoXS {
+        height: fit-content;
+    }
+    .section1{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        @include respo {
+            flex-direction: column;
+        }
+        .texte{
+            padding-top: 130px;
+        }
+        .fond{
+            background-image: url(../../images/histoire/image_histoire1.webp);
+        }
+    }
+    .section2{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100%;
+        @include respo {
+            flex-direction: column;
+        }
+        .fond{
+            background-image: url(../../images/histoire/image_histoire2.webp);
+        }
+    }
+    .section3{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        @include respo {
+            flex-direction: column;
+        }
+        .fond{
+            background-image: url(../../images/histoire/image_histoire3.webp);
+        }
+    }
+    .texte{
+        padding: 40px;
+        width: 60%;
+        background: var(--black);
+        height: 100%;
+        @include respo {
+            width: 100%;
+        }
+        .line{
+            width: 100%;
+            margin: 20px 0;
+            height: 1px;
+            background: var(--yellow);
+        }
+    }
+    .fond{
+        width: 40%;
+        height: 100%;
+        @include respo {
+            width: 100%;
+            height: 500px;
+        }
+        background-size: cover;
+        background-position: center; 
+        overflow: hidden;
+    }
+}

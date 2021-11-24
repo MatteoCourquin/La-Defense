@@ -19,13 +19,13 @@ body {
 
 h1 {
   font-family: var(--abril);
-  font-size: 5vw;
+  font-size: calc(10px + 5vw);
   color: var(--white);
 }
 
 h2 {
   font-family: var(--abril);
-  font-size: 3vw;
+  font-size: calc(20px + 2vw);
   color: var(--white);
 }
 
@@ -67,6 +67,11 @@ header svg {
   cursor: pointer;
   fill: var(--yellow);
 }
+@media screen and (max-width: 500px) {
+  header svg {
+    width: 30px;
+  }
+}
 header svg .cls-1 {
   fill: none;
   stroke: var(--yellow);
@@ -101,7 +106,7 @@ header .nav .items-nav a:hover {
 }
 
 .index {
-  background-image: url(../../images/background/Background_index.png);
+  background-image: url(../../images/background/Background_index.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -117,6 +122,13 @@ header .nav .items-nav a:hover {
   width: 60%;
   padding: 40px;
 }
+@media screen and (max-width: 500px) {
+  .hero {
+    top: 200px;
+    width: 100%;
+    padding: 20px;
+  }
+}
 .hero button {
   margin-top: 15px;
 }
@@ -124,6 +136,11 @@ header .nav .items-nav a:hover {
 .histoire {
   width: 100%;
   height: 600px;
+}
+@media screen and (max-width: 500px) {
+  .histoire {
+    height: fit-content;
+  }
 }
 .histoire .section1 {
   display: flex;
@@ -139,7 +156,7 @@ header .nav .items-nav a:hover {
   padding-top: 130px;
 }
 .histoire .section1 .fond {
-  background-image: url(../../images/histoire/image_histoire1.png);
+  background-image: url(../../images/histoire/image_histoire1.webp);
 }
 .histoire .section2 {
   display: flex;
@@ -153,7 +170,7 @@ header .nav .items-nav a:hover {
   }
 }
 .histoire .section2 .fond {
-  background-image: url(../../images/histoire/image_histoire2.png);
+  background-image: url(../../images/histoire/image_histoire2.webp);
 }
 .histoire .section3 {
   display: flex;
@@ -166,7 +183,7 @@ header .nav .items-nav a:hover {
   }
 }
 .histoire .section3 .fond {
-  background-image: url(../../images/histoire/image_histoire3.png);
+  background-image: url(../../images/histoire/image_histoire3.webp);
 }
 .histoire .texte {
   padding: 40px;
@@ -195,7 +212,7 @@ header .nav .items-nav a:hover {
 @media screen and (max-width: 800px) {
   .histoire .fond {
     width: 100%;
-    height: 800px;
+    height: 500px;
   }
 }
 
@@ -240,7 +257,7 @@ header .nav .items-nav a:hover {
 }
 
 .contact {
-  background-image: url(../../images/background/Background_contact.png);
+  background-image: url(../../images/background/Background_contact.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -260,6 +277,11 @@ header .nav .items-nav a:hover {
   height: 330px;
   background: var(--yellow);
 }
+@media screen and (max-width: 500px) {
+  .yellow_line_contact {
+    display: none;
+  }
+}
 
 .container_contact {
   display: flex;
@@ -268,6 +290,11 @@ header .nav .items-nav a:hover {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .container_contact {
+    margin-top: 115px;
+  }
+}
 .container_contact .form_contact {
   padding: 30px;
   background: var(--black);
@@ -275,6 +302,11 @@ header .nav .items-nav a:hover {
   height: fit-content;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .container_contact .form_contact {
+    width: 100%;
+  }
 }
 .container_contact .form_contact h2 {
   margin: 20px auto;

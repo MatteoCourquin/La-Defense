@@ -1,0 +1,55 @@
+// **** HEADER **** //
+// ================ //
+
+header{
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0));
+    svg{
+        margin-left: 20px;
+        width: 60px;
+        @include respoXS{
+            width: 30px;
+        }
+        height: auto;
+        cursor: pointer;
+        fill: var(--yellow);
+        .cls-1{
+            fill: none;
+            stroke: var(--yellow);
+            stroke-miterlimit: 10;
+            stroke-width: 70px;
+        }
+        &:hover{
+            fill: var(--white);
+            transition: var(--transition);
+            .cls-1{
+                stroke: var(--white);
+                transition: var(--transition);
+            }
+        }
+    }
+    .nav{
+        display: flex;
+        .items-nav{
+            list-style-type: none;
+            font-family: var(--source);
+            padding-right: 30px;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: var(--white);
+                font-size: 2em;
+                &:hover{
+                    color: var(--yellow);
+                    transition: var(--transition);
+                }
+            }
+        }
+    }
+}
