@@ -1,6 +1,6 @@
 :root {
   --yellow: #F1F53B;
-  --black: #111101;
+  --black: #3d3d26;
   --white: #fff;
   --abril: "Abril Fatface", cursive;
   --source: "Source Sans Pro", sans-serif;
@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-family: var(--abril);
-  font-size: calc(10px + 5vw);
+  font-size: clamp(30px, 5vw, 80px);
   color: var(--white);
 }
 
@@ -41,13 +41,25 @@ p {
   color: var(--white);
 }
 
+.legend {
+  font-family: var(--source);
+  font-size: clamp(1.6em, 2vw, 3em);
+  color: var(--white);
+}
+
 button {
   background: var(--yellow);
-  width: 100px;
-  height: 30px;
+  box-sizing: border-box !important;
+  padding: 10px 30px;
   border: none;
   color: var(--black);
   cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: transparent;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
 }
 
 header {
@@ -338,6 +350,7 @@ header .nav .items-nav a:hover {
   }
 }
 .container_contact .form_contact button {
+  width: fit-content;
   margin: 30px;
 }
 

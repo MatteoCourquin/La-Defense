@@ -3,7 +3,7 @@
 
 h1{
     font-family: var(--abril);
-    font-size: calc(10px + 5vw);
+    font-size: clamp(30px, 5vw, 80px);
     color: var(--white);
 }
 h2{
@@ -19,5 +19,10 @@ h3{
 p{
     font-family: var(--source);
     font-size: 1.6em;
+    color: var(--white);
+}
+.legend{
+    font-family: var(--source);
+    font-size: clamp(1.6em, 2vw, 3em);
     color: var(--white);
 }

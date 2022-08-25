@@ -3,9 +3,15 @@
 
 button{
     background: var(--yellow);
-    width: 100px;
-    height: 30px;
+    box-sizing: border-box !important;
+    padding: 10px 30px;
     border: none;
     color: var(--black);
     cursor: pointer;
+    transition: .3s;
+    &:hover{
+        background: transparent;
+        color: var(--yellow);
+        border: 2px solid var(--yellow);
+    }
 }
